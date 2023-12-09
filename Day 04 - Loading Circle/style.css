@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  border-radius: 12px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #e56262;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.circle1 {
+  z-index: 3;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  animation-fill-mode: both;
+  animation: jump1 2s infinite alternate;
+  animation-timing-function: cubic-bezier(.21, 0.98, .6, .99);
+}
+
+.circle2 {
+  z-index: 2;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #fff;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.2);
+  animation-fill-mode: both;
+  animation: jump2 2s infinite alternate;
+  animation-timing-function: cubic-bezier(.21, 0.98, .6, .99);
+}
+
+.circle3 {
+  z-index: 1;
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  background-color: #fff;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.2);
+  animation-fill-mode: both;
+  animation: jump3 2s infinite alternate;
+  animation-timing-function: cubic-bezier(.21, 0.98, .6, .99);
+}
+
+@keyframes jump1 {
+
+  0%,
+  70% {
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+    transform: scale(0)
+  }
+
+  100% {
+    box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1)
+  }
+}
+
+@keyframes jump2 {
+
+  0%,
+  40% {
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+    transform: scale(0)
+  }
+
+  100% {
+    box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1)
+  }
+}
+
+@keyframes jump3 {
+
+  0%,
+  10% {
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+    transform: scale(0)
+  }
+
+  100% {
+    box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1)
+  }
+}
