@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  border-radius: 8px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #42a7a1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 350px;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  padding: 10px 10px;
+  height: 80px;
+  background-color: #f1ba64;
+  border-radius: 8px 8px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+}
+
+div.headerLine {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.detail {
+  width: 100%;
+  height: 200px;
+  background-color: #fff;
+}
+
+.cab {
+  display: flex;
+  justify-content: end;
+  padding: 10px;
+  margin-left: 70px;
+}
+
+.trace {
+  position: absolute;
+  width: 350px;
+  border: 1px solid #f3f3f3;
+}
+
+.tr1 {
+  margin-top: 30px;
+}
+
+.tr2 {
+  margin-top: 80px;
+}
+
+.tr3 {
+  margin-top: 130px;
+}
+
+.line {
+  width: 100%;
+  position: absolute;
+  margin-top: 3px;
+  margin-left: 3px;
+}
+
+.bar {
+  margin-left: 40px;
+}
+
+.barTr {
+  position: absolute;
+  width: 13px;
+  height: 3px;
+  margin: 11px;
+  border-radius: 2px;
+}
+
+.barTr1 {
+  background-color: #fa7373;
+  margin-right: 160px;
+}
+
+.barTr2 {
+  background-color: #7ba2ff;
+  margin-right: 80px;
+}
+
+.days {
+  position: absolute;
+  margin-top: 140px;
+}
+
+.days span {
+  color: #949494;
+  display: inline;
+  padding: 6px;
+  text-transform: uppercase;
+  align-items: center;
+  text-align: center;
+  transform: translateX(50%);
+}
+
+.redPoints div {
+  width: 6px;
+  height: 6px;
+  background-color: #fa7373;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+}
+
+.red1 {
+  margin-left: 20px;
+  margin-top: 85px;
+}
+
+.red2 {
+  margin-left: 80px;
+  margin-top: 55px;
+}
+
+.red3 {
+  margin-left: 130px;
+  margin-top: 65px;
+}
+
+.red4 {
+  margin-left: 180px;
+  margin-top: 53px;
+}
+
+.red5 {
+  margin-left: 230px;
+  margin-top: 75px;
+}
+
+.red6 {
+  margin-left: 270px;
+  margin-top: 85px;
+}
+
+.red7 {
+  margin-left: 320px;
+  margin-top: 56px;
+}
+
+.redText {
+  position: absolute;
+  left: 50%;
+  top: -25px;
+  transform: translateX(-50%);
+  background-color: #fa7373;
+  color: #fff;
+  font-size: 11px;
+  border-radius: 3px;
+  padding: 6px 5px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-out;
+}
+
+.bluePoints div {
+  width: 6px;
+  height: 6px;
+  background-color: #7ba2ff;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+}
+
+.blue1 {
+  margin-left: 20px;
+  margin-top: 102px;
+}
+
+.blue2 {
+  margin-left: 80px;
+  margin-top: 90px;
+}
+
+.blue3 {
+  margin-left: 130px;
+  margin-top: 96px;
+}
+
+.blue4 {
+  margin-left: 180px;
+  margin-top: 92px;
+}
+
+.blue5 {
+  margin-left: 230px;
+  margin-top: 95px;
+}
+
+.blue6 {
+  margin-left: 270px;
+  margin-top: 110px;
+}
+
+.blue7 {
+  margin-left: 320px;
+  margin-top: 100px;
+}
+
+.blueText {
+  position: absolute;
+  left: 50%;
+  top: -25px;
+  transform: translateX(-50%);
+  background-color: #7ba2ff;
+  color: #fff;
+  font-size: 11px;
+  border-radius: 3px;
+  padding: 6px 5px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-out;
+}
+
+.redText::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  border: 5px solid;
+  border-top-color: #fa7373 #000 #000 #000;
+}
+
+.blueText::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  border: 5px solid;
+  border-top-color: #7ba2ff #000 #000 #000;
+}
+
+.redBallon:hover .redText {
+  top: -32px;
+  visibility: visible;
+  opacity: 1;
+}
+
+.blueBallon:hover .blueText {
+  top: -32px;
+  visibility: visible;
+  opacity: 1;
+}

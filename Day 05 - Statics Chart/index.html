@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Day 05 - Statics Chart</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <div class="header">
+        <div class="headerLine">
+          <span class="bold">WEEKLY REPORT</span>
+          <span>Revenue</span>
+        </div>
+        <div class="headerLine">
+          <span>01.Feb - 07. Feb</span>
+          <span class="bold">$ 3621.79</span>
+        </div>
+      </div>
+      <div class="detail">
+        <div class="cab">
+          <div class="barTr barTr1"></div>
+          <div class="barTr barTr2"></div>
+          <div class="bar barView">Views</div>
+          <div class="bar barPurchase">Purchase</div>
+        </div>
+        <p class="desc title"></p>
+        <p class="desc title"></p>
+        <div class="trace tr1"></div>
+        <div class="trace tr2"></div>
+        <div class="trace tr3"></div>
+        <svg class="line" width="350" height="200">
+          <polyline class="redLine" points="20 86, 80 55, 130 65, 180 53, 230 75, 270 86, 320 57"
+            style="fill:none; stroke: #FA7373; stroke-width: 2;">
+          </polyline>
+          <polyline class="redLine" points="20 102, 80 89, 130 97, 180 92, 230 95, 270 110, 320 100"
+            style="fill:none; stroke: #7BA2FF; stroke-width: 2;">
+          </polyline>
+        </svg>
+        <div class="redPoints">
+          <div class="redBallon red1"><span class="redText">458</span></div>
+          <div class="redBallon red2"><span class="redText">812</span></div>
+          <div class="redBallon red3"><span class="redText">746</span></div>
+          <div class="redBallon red4"><span class="redText">877</span></div>
+          <div class="redBallon red5"><span class="redText">517</span></div>
+          <div class="redBallon red6"><span class="redText">434</span></div>
+          <div class="redBallon red7"><span class="redText">803</span></div>
+        </div>
+        <div class="bluePoints">
+          <div class="blueBallon blue1"><span class="blueText">26</span></div>
+          <div class="blueBallon blue2"><span class="blueText">41</span></div>
+          <div class="blueBallon blue3"><span class="blueText">22</span></div>
+          <div class="blueBallon blue4"><span class="blueText">36</span></div>
+          <div class="blueBallon blue5"><span class="blueText">25</span></div>
+          <div class="blueBallon blue6"><span class="blueText">13</span></div>
+          <div class="blueBallon blue7"><span class="blueText">20</span></div>
+        </div>
+        <div class="days">
+          <span>Mon</span>
+          <span>Tue</span>
+          <span>Wed</span>
+          <span>Thu</span>
+          <span>Fri</span>
+          <span>Sat</span>
+          <span>Sun</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
