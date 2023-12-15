@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  border-radius: 8px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: linear-gradient(to right top, #eebd6c, #cb7d4f);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  width: 80%;
+  height: 75%;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+}
+
+.leftCol {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.pic {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 100px;
+}
+
+.pic:hover::before {
+  transform: rotate(180deg);
+}
+
+.pic:hover::after {
+  transform: rotate(-180deg);
+}
+
+.pic::before {
+  content: '';
+  width: 110%;
+  height: 110%;
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  border: 2px solid;
+  border-radius: 55%;
+  border-color: #786450 transparent #786450 #786450;
+  transition: 1s;
+}
+
+.pic::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -1.5px;
+  left: -1.5px;
+  border: 2px solid;
+  border-radius: 50%;
+  border-color: #786450 transparent #786450 #786450;
+  transition: 1s;
+}
+
+.name {
+  position: absolute;
+  top: 220px;
+  color: #786450;
+  font-weight: bold;
+}
+
+.jobTitle {
+  position: absolute;
+  top: 240px;
+  color: #b0a599;
+}
+
+.buttons {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+
+button {
+  border: #786450 1px solid;
+  height: 40px;
+  border-radius: 50px;
+  color: #786450;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #786450;
+  color: #fff;
+}
+
+.rightCol {
+  width: 35%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 2px;
+  justify-items: center;
+  align-items: center;
+}
+
+.numbers {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.grid {
+  width: 100%;
+  height: 100%;
+  color: #786450;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5e8df;
+}
+
+.grid:hover {
+  background-color: #e1cfc2;
+  cursor: pointer;
+}
