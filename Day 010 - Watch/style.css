@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+.frame {
+  width: 400px;
+  height: 400px;
+  background-color: #4c4c4c;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1rem;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #242424;
+  border: 7px solid #3A3A3A;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.spinner circle {
+  stroke: #F85B5B;
+  stroke-width: 3;
+  fill: none;
+  stroke-dasharray: 625;
+  -webkit-animation: spinner 5s linear infinite;
+  animation: spinner 5s linear infinite;
+  transform-origin: center center;
+  transform: rotate(-90deg);
+}
+
+.spinner {
+  width: 280px;
+  height: 280px;
+}
+
+.innerContent {
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+
+.date {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.time {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.beat {
+  display: inline;
+  font-weight: 300;
+}
+
+.fa-heart {
+  color: #f85b5b;
+  margin-right: 4px;
+  animation: heartbeat 1s infinite;
+}
+
+.energy {
+  display: inline;
+  font-weight: 300;
+}
+
+.point-set-1,
+.point-set-2,
+.point-set-3,
+.point-set-4,
+.point-set-5,
+.point-set-6,
+.point-set-7,
+.point-set-8,
+.point-set-9,
+.point-set-10,
+.point-set-11,
+.point-set-12,
+.point-set-13,
+.point-set-14,
+.point-set-15 {
+  position: absolute;
+  height: 260px;
+  width: 260px;
+  top: 12px;
+  left: 12px;
+}
+
+.point-set-1 {
+  transform: rotate(0deg);
+}
+
+.point-set-2 {
+  transform: rotate(6deg);
+}
+
+.point-set-3 {
+  transform: rotate(12deg);
+}
+
+.point-set-4 {
+  transform: rotate(18deg);
+}
+
+.point-set-5 {
+  transform: rotate(24deg);
+}
+
+.point-set-6 {
+  transform: rotate(30deg);
+}
+
+.point-set-7 {
+  transform: rotate(36deg);
+}
+
+.point-set-8 {
+  transform: rotate(42deg);
+}
+
+.point-set-9 {
+  transform: rotate(48deg);
+}
+
+.point-set-10 {
+  transform: rotate(54deg);
+}
+
+.point-set-11 {
+  transform: rotate(60deg);
+}
+
+.point-set-12 {
+  transform: rotate(66deg);
+}
+
+.point-set-13 {
+  transform: rotate(72deg);
+}
+
+.point-set-14 {
+  transform: rotate(78deg);
+}
+
+.point-set-15 {
+  transform: rotate(84deg);
+}
+
+/* 点的样式 */
+.point-set-1 .point-1,
+.point-set-1 .point-2,
+.point-set-1 .point-3,
+.point-set-1 .point-4,
+.point-set-2 .point-1,
+.point-set-2 .point-2,
+.point-set-2 .point-3,
+.point-set-2 .point-4,
+.point-set-3 .point-1,
+.point-set-3 .point-2,
+.point-set-3 .point-3,
+.point-set-3 .point-4,
+.point-set-4 .point-1,
+.point-set-4 .point-2,
+.point-set-4 .point-3,
+.point-set-4 .point-4,
+.point-set-5 .point-1,
+.point-set-5 .point-2,
+.point-set-5 .point-3,
+.point-set-5 .point-4,
+.point-set-6 .point-1,
+.point-set-6 .point-2,
+.point-set-6 .point-3,
+.point-set-6 .point-4,
+.point-set-7 .point-1,
+.point-set-7 .point-2,
+.point-set-7 .point-3,
+.point-set-7 .point-4,
+.point-set-8 .point-1,
+.point-set-8 .point-2,
+.point-set-8 .point-3,
+.point-set-8 .point-4,
+.point-set-9 .point-1,
+.point-set-9 .point-2,
+.point-set-9 .point-3,
+.point-set-9 .point-4,
+.point-set-10 .point-1,
+.point-set-10 .point-2,
+.point-set-10 .point-3,
+.point-set-10 .point-4,
+.point-set-11 .point-1,
+.point-set-11 .point-2,
+.point-set-11 .point-3,
+.point-set-11 .point-4,
+.point-set-12 .point-1,
+.point-set-12 .point-2,
+.point-set-12 .point-3,
+.point-set-12 .point-4,
+.point-set-13 .point-1,
+.point-set-13 .point-2,
+.point-set-13 .point-3,
+.point-set-13 .point-4,
+.point-set-14 .point-1,
+.point-set-14 .point-2,
+.point-set-14 .point-3,
+.point-set-14 .point-4,
+.point-set-15 .point-1,
+.point-set-15 .point-2,
+.point-set-15 .point-3,
+.point-set-15 .point-4 {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: #D3D3D3;
+  border-radius: 50%;
+}
+
+/* 特定点的样式 */
+.point-set-1 .point-1,
+.point-set-1 .point-4,
+.point-set-2 .point-1,
+.point-set-2 .point-4,
+.point-set-3 .point-1,
+.point-set-3 .point-4,
+.point-set-4 .point-1,
+.point-set-4 .point-4,
+.point-set-5 .point-1,
+.point-set-5 .point-4,
+.point-set-6 .point-1,
+.point-set-6 .point-4,
+.point-set-7 .point-1,
+.point-set-7 .point-4,
+.point-set-8 .point-1,
+.point-set-8 .point-4,
+.point-set-9 .point-1,
+.point-set-9 .point-4,
+.point-set-10 .point-1,
+.point-set-10 .point-4,
+.point-set-11 .point-1,
+.point-set-11 .point-4,
+.point-set-12 .point-1,
+.point-set-12 .point-4,
+.point-set-13 .point-1,
+.point-set-13 .point-4,
+.point-set-14 .point-1,
+.point-set-14 .point-4,
+.point-set-15 .point-1,
+.point-set-15 .point-4 {
+  top: 0;
+  left: 128px;
+}
+
+.point-set-1 .point-2,
+.point-set-2 .point-2,
+.point-set-3 .point-2,
+.point-set-4 .point-2,
+.point-set-5 .point-2,
+.point-set-6 .point-2,
+.point-set-7 .point-2,
+.point-set-8 .point-2,
+.point-set-9 .point-2,
+.point-set-10 .point-2,
+.point-set-11 .point-2,
+.point-set-12 .point-2,
+.point-set-13 .point-2,
+.point-set-14 .point-2,
+.point-set-15 .point-2 {
+  top: 128px;
+  left: auto;
+  right: 0;
+}
+
+.point-set-1 .point-3,
+.point-set-2 .point-3,
+.point-set-3 .point-3,
+.point-set-4 .point-3,
+.point-set-5 .point-3,
+.point-set-6 .point-3,
+.point-set-7 .point-3,
+.point-set-8 .point-3,
+.point-set-9 .point-3,
+.point-set-10 .point-3,
+.point-set-11 .point-3,
+.point-set-12 .point-3,
+.point-set-13 .point-3,
+.point-set-14 .point-3,
+.point-set-15 .point-3 {
+  left: 128px;
+  top: auto;
+  bottom: 0;
+}
+
+.point-set-1 .point-4,
+.point-set-2 .point-4,
+.point-set-3 .point-4,
+.point-set-4 .point-4,
+.point-set-5 .point-4,
+.point-set-6 .point-4,
+.point-set-7 .point-4,
+.point-set-8 .point-4,
+.point-set-9 .point-4,
+.point-set-10 .point-4,
+.point-set-11 .point-4,
+.point-set-12 .point-4,
+.point-set-13 .point-4,
+.point-set-14 .point-4,
+.point-set-15 .point-4 {
+  top: 128px;
+  left: 0;
+}
+
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(0.8);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+@-webkit-keyframes spinner {
+  from {
+    stroke-dashoffset: 625;
+    transform: rotate(-90deg) scaleY(1);
+  }
+
+  50% {
+    stroke-dashoffset: 0;
+    transform: rotate(-90deg) scaleY(1);
+  }
+
+  50.001% {
+    transform: rotate(-90deg) scaleY(-1);
+  }
+
+  to {
+    stroke-dashoffset: 625;
+    transform: rotate(-90deg) scaleY(-1);
+  }
+}
+
+@keyframes spinner {
+  from {
+    stroke-dashoffset: 625;
+    transform: rotate(-90deg) scaleY(1);
+  }
+
+  50% {
+    stroke-dashoffset: 0;
+    transform: rotate(-90deg) scaleY(1);
+  }
+
+  50.001% {
+    transform: rotate(-90deg) scaleY(-1);
+  }
+
+  to {
+    stroke-dashoffset: 625;
+    transform: rotate(-90deg) scaleY(-1);
+  }
+}
